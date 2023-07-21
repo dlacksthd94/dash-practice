@@ -27,7 +27,7 @@ df_nut = df_nut.astype(float)
 df_nut = df_nut.mul(df_nut.iloc[:, -1], axis=0).div(df_nut.iloc[:, 0], axis=0)
 df_nut = df_nut.iloc[:, 1:-1]
 
-app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = dash.Dash(external_stylesheets=[dbc.themes.MINTY])
 
 # the style arguments for the sidebar. We use position:fixed and a fixed width
 SIDEBAR_STYLE = {
